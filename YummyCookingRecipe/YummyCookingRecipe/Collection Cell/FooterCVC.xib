@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FooterCVC" customModule="YummyCookingRecipe" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fsA-cU-c1g">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMW-8E-Ha1">
+                    <rect key="frame" x="15" y="11" width="55" height="35"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                    <connections>
+                        <action selector="homePageButton:" destination="-1" eventType="touchUpInside" id="4oJ-yg-xAV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFx-5S-CYE">
+                    <rect key="frame" x="120" y="11" width="44" height="35"/>
+                    <color key="tintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="fork.knife" catalog="system"/>
+                    <connections>
+                        <action selector="categoriesButton:" destination="-1" eventType="touchUpInside" id="apa-YD-B8A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-ZU-oXa">
+                    <rect key="frame" x="214" y="11" width="51" height="35"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                    <connections>
+                        <action selector="favoritesButton:" destination="-1" eventType="touchUpInside" id="oBL-gq-gTN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pN-Lf-icj">
+                    <rect key="frame" x="315" y="10" width="48" height="35"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system"/>
+                    <connections>
+                        <action selector="accountsButton:" destination="-1" eventType="touchUpInside" id="mxy-Vd-ruX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DMW-8E-Ha1" firstAttribute="leading" secondItem="fsA-cU-c1g" secondAttribute="leading" constant="15" id="5V6-rX-1ds"/>
+                <constraint firstAttribute="bottom" secondItem="DMW-8E-Ha1" secondAttribute="bottom" constant="10" id="Kci-0A-QF2"/>
+                <constraint firstAttribute="bottom" secondItem="dFx-5S-CYE" secondAttribute="bottom" constant="10" id="L7K-Yd-5ob"/>
+                <constraint firstItem="dFx-5S-CYE" firstAttribute="top" secondItem="fsA-cU-c1g" secondAttribute="top" constant="11" id="PkP-Gt-QYD"/>
+                <constraint firstItem="YvP-ZU-oXa" firstAttribute="leading" secondItem="dFx-5S-CYE" secondAttribute="trailing" constant="50" id="ReW-DU-crC"/>
+                <constraint firstItem="YvP-ZU-oXa" firstAttribute="top" secondItem="fsA-cU-c1g" secondAttribute="top" constant="11" id="YQg-PW-3D9"/>
+                <constraint firstAttribute="bottom" secondItem="5pN-Lf-icj" secondAttribute="bottom" constant="11" id="YZS-Td-FiI"/>
+                <constraint firstItem="5pN-Lf-icj" firstAttribute="leading" secondItem="YvP-ZU-oXa" secondAttribute="trailing" constant="50" id="abQ-Kv-nXj"/>
+                <constraint firstItem="5pN-Lf-icj" firstAttribute="top" secondItem="fsA-cU-c1g" secondAttribute="top" constant="10" id="ly5-WP-fAj"/>
+                <constraint firstAttribute="bottom" secondItem="YvP-ZU-oXa" secondAttribute="bottom" constant="10" id="nIx-7W-b2Q"/>
+                <constraint firstItem="DMW-8E-Ha1" firstAttribute="top" secondItem="fsA-cU-c1g" secondAttribute="top" constant="11" id="y2A-Wd-Pbm"/>
+                <constraint firstItem="dFx-5S-CYE" firstAttribute="leading" secondItem="DMW-8E-Ha1" secondAttribute="trailing" constant="50" id="yFQ-b3-Ddi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-74" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fork.knife" catalog="system" width="94" height="128"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
